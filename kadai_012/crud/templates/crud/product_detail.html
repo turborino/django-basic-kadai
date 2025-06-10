@@ -8,17 +8,20 @@
    <thead>
        <tr>
            <th>商品名</th>
-           <th>商品詳細</th>
            <th>価格</th>
+           <th>カテゴリ</th>
+           <th>商品説明</th>
+           <th>画像</th>
        </tr>
    </thead>
   
    <tr>
-       <td>{{ product.name }}</td>
-       <td>{{ product.detail }}</td>
-       <td>{{ product.price }} 円</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }} 円</td>
+      <td>{{ product.category }}</td>
+      <td>{{ product.detail }}</td>
+      <td><img src="{{ product.img.url }}" style="width:100px height:auto;"></td>
    </tr>
- 
 </table>
 
 
